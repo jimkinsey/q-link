@@ -1,0 +1,1 @@
+module.exports = (name) -> (args...) -> (obj) -> obj[name].apply obj, args
