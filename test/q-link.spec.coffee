@@ -22,4 +22,12 @@ describe 'Q Link', ->
         prefix: 'Good morning'
         greet: (name) -> "#{@prefix} #{name}!"
       expect(greet('Tim')(greeter)).toBe 'Good morning Tim!'
+    
+  it 'returns an array of functions for each method name, when there is more than one', ->
+    [welcome, bidFarewell] = qLink 'welcome', 'bidFarewell'
+    host =
+      welcome: -> 'Welcome!'
+      bidFarewell: -> 'Farewell!'
+    expect(welcome()(host)).toBe 'Welcome!'
+    expect(bidFarewell()(host)).toBe 'Farewell!'  
   
