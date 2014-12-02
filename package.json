@@ -1,0 +1,23 @@
+{
+  "name": "q-link",
+  "version": "0.1.0",
+  "description": "Generate convenient functions for use with the Q promise library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "q",
+    "async",
+    "promise"
+  ],
+  "author": "Jim Kinsey",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-jasmine-node": "^0.2.1",
+    "grunt-release": "^0.7.0"
+  }
+}
